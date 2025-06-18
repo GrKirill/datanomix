@@ -1,0 +1,547 @@
+Задание:,"Заполнить столбцы C и D (Prediction@1, Prediction@3) в таблице корректными кодами ЕНСТРУ для указанного Наименования товара (Столбец A). Столбец B (Target) заполняется человеком при проверке задания и служит бенчмарком.",,,,
+Ответ:,"В это поле вставьте ссылку на публичный github-репозиторий с кодом, который Вы создадите для выполнения этого задания. Для этого просто сделайте копию этого файла и вышлите нам ссылку (убедитесь, что она доступна для чтения по ссылке).",,,,
+,,,,,
+Описание деятельности компании из задания:,"Компания занимается широким спектром хозяйственной деятельности, в основном связанной с транспортно-логистическими услугами и терминальной обработкой грузов. Они являются крупным оператором логистических терминалов в Казахстане, оказывают услуги по перегрузке грузов на пограничных станциях, а также предоставляют полный комплекс транспортно-логистических услуг в области грузовых перевозок. 
+Основные направления деятельности:
+Терминальная обработка грузов:
+Включает эксплуатацию погрузочно-разгрузочных работ, механизмов и автотранспорта, а также управление терминальной инфраструктурой. 
+Транспортно-логистические услуги:
+Предоставление полного комплекса услуг по перевозке грузов железнодорожным и автомобильным транспортом, включая экспортные, импортные, внутренние и транзитные перевозки. 
+Перегрузка грузов:
+Осуществление перегруза грузов с колеи на колею на станциях. 
+Материально-техническая поддержка:
+Поддержка компаний, работающих в железнодорожной сфере, включая сбор, хранение, обработку и реализацию металлолома. 
+Торговля и логистика:
+Занятие деятельностью в области торговли и логистики. 
+Внедрение технологий:
+Внедрение высоких технологий в железнодорожной индустрии. 
+Услуги «от двери до двери»:
+Предоставление логистической схемы «door to door» (от двери до двери) для доставки грузов конечному потребителю. 
+Развитие транзитных перевозок:
+Содействие развитию транзитных перевозок. 
+Повышение удовлетворенности клиентов:
+Стремление к повышению удовлетворенности клиентов. 
+Цифровизация:
+Внедрение цифровых технологий в свою деятельность. 
+Принципы ESG:
+Внедрение принципов ESG (Environmental, Social, and Governance). 
+Безопасность производственной деятельности:
+Гарантирование безопасности производственной деятельности",,,,
+Классификатор ЕНСТРУ,ЕНСТРУ.csv,,,,
+Метрика,Значение метрики,,Match,1,
+Accuracy,"25,00%",,Non-Match,3,
+Accuracy@3,"75,00%",,Skip,1,
+Не пропущено,"80,00%",,Processed,5,
+,,,,,
+Наименование,Target: Код ЕНСТРУ (15 символов),Prediction@1,Prediction@3,Prediction@3 match,Prediction@1 match
+Чайные ложки,257114.410.000021,257114.410.000021,"257114.410.000021: Ложка чайная, из стали;
+257114.492.000009: Ложка чайная, из мельхиора;
+257114.491.000011: Ложка чайная, из алюминия;",TRUE,1
+Ремень,302040.300.00109,-,"221940.990.000000: Ремень резиновый, для газораспределительного механизма автомобиля;
+141931.800.000000: Ремень кожаный;
+281332.000.000316: Ремень для компрессора;
+",FALSE,Skip
+Лопатки (текстолит) на вакумный насос КО-503Б (комп),281133.000.000010,281331.000.000281,"281133.000.000010: Лопатка рабочая, для ротора осевого компрессора газоперекачивающего агрегата, 3 ступень;
+281331.000.000281: Лопатка текстопластовая, для насоса;
+281133.000.000035: Лопатка неподвижная, для входного направляющего аппарата газоперекачивающего агрегата;",TRUE,0
+Отвод 73,283060.300.000002,222129.700.00010,"259929.490.000192: Траверса ТМ-73;
+222129.700.000105: Отвод поливинилхлоридный, диаметр 63 мм;
+222129.700.000127: Отвод полиэтиленовый, диаметр 63 мм;",FALSE,0
+Зарядного устройства Motorola NNTN8117,263030.900.000108,271150.330.000002,"263030.900.000108: Устройство зарядное для сотового телефона;
+262040.000.000213: Устройство зарядное для ноутбука;
+271150.330.000002: Устройство зарядное для аккумулятора радиостанции;",TRUE,0
+Оборудование для лаборатории анализа нефти и воды,,,,FALSE,Not processed
+Лента клейкая 18мм*10м,,,,FALSE,Not processed
+"Оксолиновая мазь 10г 0,25%",,,,FALSE,Not processed
+Щебень,,,,FALSE,Not processed
+Бумажные полотенце,,,,FALSE,Not processed
+Перчатки диэлектрические,,,,FALSE,Not processed
+Системный блок,,,,FALSE,Not processed
+"Втулка подшипника Н 13,3,281,01,016",,,,FALSE,Not processed
+Масляный фильтр ЯМЗ-238,,,,FALSE,Not processed
+Дрель-шуруповёрт DeWALT DCD776S2,,,,FALSE,Not processed
+Муфта сцепления в сборе ЗИЛ-131,,,,FALSE,Not processed
+"Клапан электромагнитный ВН2Н-6Е ФЛ.УХЛ1 - В СБОРЕ. Исполнение: фланцевое, DN50 мм, 6 бар, 220В, 50 Гц. для печей ПБТ-1,6М",,,,FALSE,Not processed
+"Муфта д.50мм, пластик",,,,FALSE,Not processed
+"Уровнемер для МДУ, Kenco Tulsa",,,,FALSE,Not processed
+Автоматический выключатель ВА57-400 3Р 400А,,,,FALSE,Not processed
+"Датчик скорости Волга, Газель, Соболь, УАЗ",,,,FALSE,Not processed
+Кислота паяльная 30мл,,,,FALSE,Not processed
+"Глушитель УАЗ 330395.330394.390945 Евро-2,3,4",,,,FALSE,Not processed
+Фильтр грубый очистки 974-897,,,,FALSE,Not processed
+"Манометр 0-250 кгс/см2 (М 20*1,5)",,,,FALSE,Not processed
+Шток полированный 1 1/4-8000-7/8-45,,,,FALSE,Not processed
+Огнетушитель ОУ-5,,,,FALSE,Not processed
+"Ацетилсалициловая кислота 0,5 №10",,,,FALSE,Not processed
+редуктор газовый,,,,FALSE,Not processed
+Труба ПВХ,,,,FALSE,Not processed
+Фильтр семник,,,,FALSE,Not processed
+Ткань для уборки,,,,FALSE,Not processed
+Паранит 3 мм,,,,FALSE,Not processed
+Точка доступа Ubiquiti UniFi 6+,,,,FALSE,Not processed
+Разъединитель РЛНД 10кв,,,,FALSE,Not processed
+Растворитель 646 10л,,,,FALSE,Not processed
+КЛЮЧ газовый №0 СИБРТЕХ,,,,FALSE,Not processed
+"Электрод LB -2,6",,,,FALSE,Not processed
+Дополнительный насос отопителя 12Вт,,,,FALSE,Not processed
+Лист металичечкий 5мм,,,,FALSE,Not processed
+"Труба д. 20мм,пластик",,,,FALSE,Not processed
+Агрегат ГА-165,,,,FALSE,Not processed
+Спецодежда (костюм) зимняя для сваршика,,,,FALSE,Not processed
+Фланец 80/25 ГОСТ 12820-80,,,,FALSE,Not processed
+Дехлор (банк -300 таб),,,,FALSE,Not processed
+долото 105мм,,,,FALSE,Not processed
+Аккумулятор 75,,,,FALSE,Not processed
+"Кран шаровый Ду 80 Стал, Фланц.",,,,FALSE,Not processed
+Ремень привода компрессора 16х11-1103,,,,FALSE,Not processed
+Серверные жесткие диски,,,,FALSE,Not processed
+Ластик,,,,FALSE,Not processed
+Наконечник 35,,,,FALSE,Not processed
+Костюм форменный для военнослужащих (Спецодежда летняя для охраны),,,,FALSE,Not processed
+Стартер,,,,FALSE,Not processed
+Белизна ( банк -500 гр.),,,,FALSE,Not processed
+Сальник 42х75х10 правый 10 шт,,,,FALSE,Not processed
+Аппарат топливный ТНВД МТЗ -80,,,,FALSE,Not processed
+"Штанга короткая насосная 22-2,0-С",,,,FALSE,Not processed
+ТНВД топливной аппаратуры КАМАЗ ЕВРО-2,,,,FALSE,Not processed
+Тиски слесарные,,,,FALSE,Not processed
+"Воздушный фильтр КАМАЗ ЕВРО 1 7405Р,1109560",,,,FALSE,Not processed
+"Нижняя щека и штифт в сборе для трубного ключа 48""",,,,FALSE,Not processed
+Автоматический выключатель 3 –х фазный 32 А,,,,FALSE,Not processed
+Крышка сальника насоса К100-65-250а-С,,,,FALSE,Not processed
+Гибкий шланг сместителя - 60 см.,,,,FALSE,Not processed
+Ручка шариковая синий,,,,FALSE,Not processed
+"Автоматический выключатель 3 –х фазный 250А,",,,,FALSE,Not processed
+Сахар 1кг рафинад,,,,FALSE,Not processed
+Пускатель магнитный 63А,,,,FALSE,Not processed
+Фильтр маслянный 65.05510-5020В на ДЭС-825 АКСА,,,,FALSE,Not processed
+Пакеты большие,,,,FALSE,Not processed
+печка радиатор салона,,,,FALSE,Not processed
+Сканер штрих кодов Honeywell Orbit 7120,,,,FALSE,Not processed
+"Краска Албан 3,5 синий",,,,FALSE,Not processed
+Фильтр топливный КАМАЗ,,,,FALSE,Not processed
+Канат ГОСТ 7665-80 д.14.5мм(Г-В-Н-Р-Т-1770),,,,FALSE,Not processed
+"Аккумулятор пожарный SF12045 12V 4,5A",,,,FALSE,Not processed
+Барабан WC7120/7220 (67000k) чёрный (R1),,,,FALSE,Not processed
+Пластырь перцовый,,,,FALSE,Not processed
+Клей Момент водостойкий125мл,,,,FALSE,Not processed
+Щетка генератора с держателем 27370-58460,,,,FALSE,Not processed
+Литол-24/О/смазка/18кг/шт,,,,FALSE,Not processed
+Ручка синяя,,,,FALSE,Not processed
+Клапан обратный Dn-89мм Pn-16bar,,,,FALSE,Not processed
+Чай черный 100 пак,,,,FALSE,Not processed
+Набор ключей от 32 до 55мм (хромованадиевые),,,,FALSE,Not processed
+Фильтр топливный 65.12503-5018А на ДЭС-825 АКСА,,,,FALSE,Not processed
+Отрезной диск 125 мм,,,,FALSE,Not processed
+Жидкость омыватель Sibiria 4л,,,,FALSE,Not processed
+Тонер Xerox (малиновый) VersaLink C7020,,,,FALSE,Not processed
+Альбуцид 30% 10мл гл.капли,,,,FALSE,Not processed
+"Кран шаровой д. 50мм, пластик",,,,FALSE,Not processed
+Пускатель магнитный 32А,,,,FALSE,Not processed
+Закуп Печи подогрева по объекту ГУ-2 на м/р Сарыбулак,,,,FALSE,Not processed
+Ремень помпы,,,,FALSE,Not processed
+Электрический подогреватель охлаждающей жидкости,,,,FALSE,Not processed
+Манометр,,,,FALSE,Not processed
+Крышка КПП с КОМ,,,,FALSE,Not processed
+АЛЛЕРГОНАФ 15 МЛ КАПЛИ Д/ГЛАЗ И НОСА,,,,FALSE,Not processed
+Кабель ВБбШВ 4*35,,,,FALSE,Not processed
+Замок висячий,,,,FALSE,Not processed
+Валокардин 20 мл,,,,FALSE,Not processed
+"Тройник д.50мм, пластик",,,,FALSE,Not processed
+Хоз. Мыло,,,,FALSE,Not processed
+Дизельное масло,,,,FALSE,Not processed
+Сварочный аппарат САГ c дизельным двигателем Линкольн,,,,FALSE,Not processed
+Набор инструментов FORCE 142 предм.,,,,FALSE,Not processed
+"Штанга короткая насосная 22-1,0-С",,,,FALSE,Not processed
+Фильтр масляный Краз,,,,FALSE,Not processed
+Ремень генератора 90916-02452,,,,FALSE,Not processed
+Датчик масленый,,,,FALSE,Not processed
+Медные Жала для Паяльника 6мм,,,,FALSE,Not processed
+Лопата штыковая,,,,FALSE,Not processed
+Рулетка 20 м,,,,FALSE,Not processed
+Сверло набор 1мм-10мм,,,,FALSE,Not processed
+Тормозная лента ГКШ-1500,,,,FALSE,Not processed
+Лимон,,,,FALSE,Not processed
+Распередительный шкаф ПР-11,,,,FALSE,Not processed
+Сапоги резиновые с чулком,,,,FALSE,Not processed
+Санипласт № 10,,,,FALSE,Not processed
+Лента клейкая 48 мм*132м,,,,FALSE,Not processed
+АФНИ.306121.005 Кран шаровый Ду 50 Ру70,,,,FALSE,Not processed
+"Прямой трубный ключ, № Модели 24, типоразмер 24""/600мм, размер трубы 3""/80мм, вес 4,4кг",,,,FALSE,Not processed
+Бура для пайки,,,,FALSE,Not processed
+Фильтр салона CF 3504C,,,,FALSE,Not processed
+Софрадекс 5мл,,,,FALSE,Not processed
+Амортизатор передний,,,,FALSE,Not processed
+Только секции насоса ВНН5-80-1200,,,,FALSE,Not processed
+"Тройник д.40мм, пластик",,,,FALSE,Not processed
+Йокс спрей 30 мл,,,,FALSE,Not processed
+Переклюатель повората,,,,FALSE,Not processed
+Стропа текстильная петлевая СТП8-3000,,,,FALSE,Not processed
+Сальник передный на ДЭС-825 АКСА (турецкий),,,,FALSE,Not processed
+Олово для пайки,,,,FALSE,Not processed
+Радиатор охлаждения ЗИЛ,,,,FALSE,Not processed
+Дрель электрический,,,,FALSE,Not processed
+Ключ ударный (плюха) 46,,,,FALSE,Not processed
+Grandstream UCM6308A - IP ATC,,,,FALSE,Not processed
+Нож столовый,,,,FALSE,Not processed
+Аккумулятор 12V-7A SF,,,,FALSE,Not processed
+"Американка д.63мм, пластик",,,,FALSE,Not processed
+Фужеры для воды(сока),,,,FALSE,Not processed
+Мост,,,,FALSE,Not processed
+Флюс для пайки,,,,FALSE,Not processed
+Эргоферон №20,,,,FALSE,Not processed
+"Масляная станция"" МС-1",,,,FALSE,Not processed
+Маслянный фильтр,,,,FALSE,Not processed
+Кресло для ИТР( офис Сарыбулак),,,,FALSE,Not processed
+Терморегулятор для электрического обогревателя на 300 градуса,,,,FALSE,Not processed
+Труба 114*5,,,,FALSE,Not processed
+"Мышь USB, проводной",,,,FALSE,Not processed
+Шарики для унитаза,,,,FALSE,Not processed
+Фенистил гель30г,,,,FALSE,Not processed
+Зажим для груза парафинорезки,,,,FALSE,Not processed
+"Крестовина кардана Волга, Газель, УАЗ ""СТАНДАРТ""",,,,FALSE,Not processed
+Аккумулятор УПС NPW36-12,,,,FALSE,Not processed
+Гайка М16,,,,FALSE,Not processed
+Ежедневник,,,,FALSE,Not processed
+Фланец Dn-50мм Pn-16bar,,,,FALSE,Not processed
+Хомут У-1,,,,FALSE,Not processed
+Манометр 0-1 кгс/см2,,,,FALSE,Not processed
+"Штанга короткая насосная 22-1,5-С",,,,FALSE,Not processed
+Шнур асбестовый 10мм,,,,FALSE,Not processed
+"Метрошток 4,5 м",,,,FALSE,Not processed
+Сальбутамол аэрозоль 200доз,,,,FALSE,Not processed
+Электробензонасос,,,,FALSE,Not processed
+"Кран шаровой д.15мм, пластик",,,,FALSE,Not processed
+Аркан джутовая удерживающая 18 мм,,,,FALSE,Not processed
+Задвижка шаровая Dn-100мм Pn-16bar,,,,FALSE,Not processed
+Рубильник 630 Ампер,,,,FALSE,Not processed
+Насос ДАВ А50/180 ХМ,,,,FALSE,Not processed
+Отвод 50,,,,FALSE,Not processed
+Плашки 73 под спг 75,,,,FALSE,Not processed
+Двутавр 20,,,,FALSE,Not processed
+Труборез RIDGIT 6-S 114-168 мм,,,,FALSE,Not processed
+Инструмент для развальцовки(разбартовки) медных трубок,,,,FALSE,Not processed
+ремень генератора 10000-18860,,,,FALSE,Not processed
+Регулятор РДБК 1-50/35,,,,FALSE,Not processed
+Конвертор универсальный GM-211,,,,FALSE,Not processed
+Кабель micro USB,,,,FALSE,Not processed
+Гайка М 6,,,,FALSE,Not processed
+Масло И40,,,,FALSE,Not processed
+Набор сверл по металлу 25 шт,,,,FALSE,Not processed
+"Клавиатура, проводная",,,,FALSE,Not processed
+Корпус насоса К100-65-250а-С,,,,FALSE,Not processed
+Лампа NL-T8 LED 18 W 1200 мм,,,,FALSE,Not processed
+Омез 20мг,,,,FALSE,Not processed
+ножницы по металлу,,,,FALSE,Not processed
+Вал карданный УАЗ,,,,FALSE,Not processed
+Штанга насосная 22-8000мм-Д с 3 центраторами,,,,FALSE,Not processed
+Насос ВНН5-50-1500/53-004921-2,,,,FALSE,Not processed
+Воздушный компрессор,,,,FALSE,Not processed
+Промежуточное звено ПРТ,,,,FALSE,Not processed
+"Штанга короткая насосная 22-0,5-С",,,,FALSE,Not processed
+"Вентиль шаровый д.25мм , бронза",,,,FALSE,Not processed
+"Вывоз, переработка и утилизация отходов потребления",,,,FALSE,Not processed
+Труба б/ш 89х6,,,,FALSE,Not processed
+Гриппостад вит С № 10,,,,FALSE,Not processed
+Клапан обратный Dn-219мм Pn-16bar,,,,FALSE,Not processed
+Фильтр масляной 901-115,,,,FALSE,Not processed
+Насос 25-175RHAM-14-5-2-2,,,,FALSE,Not processed
+"Шланг в/дDy=6мм(2SN),(L=30м)",,,,FALSE,Not processed
+Ингавирин 90 мг №7,,,,FALSE,Not processed
+Натрия тиосульфат-Дарница 30% 5мл №10,,,,FALSE,Not processed
+литол-24 10 кг,,,,FALSE,Not processed
+"Кран шаровой д.20мм, пластик",,,,FALSE,Not processed
+Салфетки Клинекс,,,,FALSE,Not processed
+Тормозной суппорт,,,,FALSE,Not processed
+Набор ключей 6-32,,,,FALSE,Not processed
+Распределительная коробка JBM-100 EP,,,,FALSE,Not processed
+"Хомут пластиковый 3,6х5 (100шт в упаковке)",,,,FALSE,Not processed
+Кетонал свечи №12,,,,FALSE,Not processed
+Насос бочковой ручной для емкостей,,,,FALSE,Not processed
+Лента сигнальная Осторожно кабель,,,,FALSE,Not processed
+Резак по металлу,,,,FALSE,Not processed
+Тетрациклин АКОС 3%-15г мазь,,,,FALSE,Not processed
+Рулевая тяга,,,,FALSE,Not processed
+Ремень А-850,,,,FALSE,Not processed
+Фланец 200,,,,FALSE,Not processed
+"Лента ФУМ-1 высший сорт 0,10х60 ТУ 6-05-1388-86",,,,FALSE,Not processed
+Экстракт валерьянки 20мг № 50,,,,FALSE,Not processed
+Насос дозатора с шлангой DLX MA/AD,,,,FALSE,Not processed
+"Вентиль шаровый д.50 мм , бронза",,,,FALSE,Not processed
+Закуп Дренажная емкость по объекту ГУ на м/р Кайнар,,,,FALSE,Not processed
+Порошок Пропер,,,,FALSE,Not processed
+Сальник лобовой,,,,FALSE,Not processed
+Палец сбивной для сливного клапана КС-73,,,,FALSE,Not processed
+Электро насос бочковой взрывозащищенный,,,,FALSE,Not processed
+"Автоматический выключатель 3 –х фазный 100А,",,,,FALSE,Not processed
+Крышка корпуса насоса К100-65-250а-С,,,,FALSE,Not processed
+Пропан,,,,FALSE,Not processed
+Концевая заделка Е-19,,,,FALSE,Not processed
+Лампа паяльная,,,,FALSE,Not processed
+Lan-тестер кабельный щумозащищенный ProsKit MT-7029,,,,FALSE,Not processed
+"Антенна автомобильная Diamond MC201 340-520 МГц, 1/4, 70Вт, с магнитным креплением и кабелем 4м, BNC",,,,FALSE,Not processed
+Принт-картридж Xerox B1025 (80K),,,,FALSE,Not processed
+"Валидол 0,06 № 10",,,,FALSE,Not processed
+Масло трансформаторное Т-1500,,,,FALSE,Not processed
+Болт М12,,,,FALSE,Not processed
+Азот,,,,FALSE,Not processed
+Датчик-реле контроля пламени СЛ-90-1/24Е,,,,FALSE,Not processed
+"Обустройство устья скважин 222,218,219,317,318 на м/р Сарыбулак",,,,FALSE,Not processed
+Пена монтажная,,,,FALSE,Not processed
+Соль пищевая,,,,FALSE,Not processed
+"Парацетамол 0,5г",,,,FALSE,Not processed
+Шланг кислародный ф6мм,,,,FALSE,Not processed
+Набор инструментов 142 предмет,,,,FALSE,Not processed
+Комплект досмотровых средств ПОИСК-2У,,,,FALSE,Not processed
+Изолента ХБ тканевая черная,,,,FALSE,Not processed
+Амортизатор задний масляный,,,,FALSE,Not processed
+Краскопульт,,,,FALSE,Not processed
+Герметик,,,,FALSE,Not processed
+Растворитель 646,,,,FALSE,Not processed
+Паста водочувствительная,,,,FALSE,Not processed
+Кабельный наконечник на груза,,,,FALSE,Not processed
+Капсикам мазь 30,,,,FALSE,Not processed
+Уголь активированный № 10,,,,FALSE,Not processed
+Картридж на принтер Canon 4410,,,,FALSE,Not processed
+Свечи зажигания (к-т: 4шт),,,,FALSE,Not processed
+Ремень ГРМ Renault,,,,FALSE,Not processed
+"гкш, сухари 73мм",,,,FALSE,Not processed
+Жел.терка,,,,FALSE,Not processed
+Ремень 997-871,,,,FALSE,Not processed
+Главный тормозной цилиндр,,,,FALSE,Not processed
+Задвижка фл.ст. Ду80 Ру16,,,,FALSE,Not processed
+Аккумулятор 90,,,,FALSE,Not processed
+УВН-10кВ световая индикация и сигнальная,,,,FALSE,Not processed
+Oбратный клапан PCV,,,,FALSE,Not processed
+Перчатки рабочие х/б с ПВХ,,,,FALSE,Not processed
+Герметик Автосил 180 гр,,,,FALSE,Not processed
+Фильтр влагоотделитель 4040.0216,,,,FALSE,Not processed
+Скорошиватель бумаж.,,,,FALSE,Not processed
+Барабан WC7120/7220 (51000k) пурпурный (R3),,,,FALSE,Not processed
+Кабель ВБбШВ 4х16мм,,,,FALSE,Not processed
+Нефтегазовый сепаратор НГС-II-1.8-1200,,,,FALSE,Not processed
+"Муфта д.25мм, пластик",,,,FALSE,Not processed
+Скважинный нагреватель НСВ-4 в сборе,,,,FALSE,Not processed
+Краска синяя,,,,FALSE,Not processed
+Лента транспортерная (двухниточная),,,,FALSE,Not processed
+"Фастум гель 50г 2,5%",,,,FALSE,Not processed
+Корректор-20мл (RETYPE),,,,FALSE,Not processed
+Масло полифитовое 100мл,,,,FALSE,Not processed
+Балка проблесковая оранжевая светодиодная четырехсторонняя 180 Ватт,,,,FALSE,Not processed
+Опора кардана (подвеска),,,,FALSE,Not processed
+Моторчик отопителя салона,,,,FALSE,Not processed
+Степлер №10,,,,FALSE,Not processed
+Дисплей расходомера Endress & Hause PROWIRL F,,,,FALSE,Not processed
+Выключатель автоматический 50 А,,,,FALSE,Not processed
+Хоз.мыло,,,,FALSE,Not processed
+Шланг кислородный,,,,FALSE,Not processed
+Полотно для ножовки по металлу,,,,FALSE,Not processed
+Конфеты ассорти,,,,FALSE,Not processed
+Ципролет 500мг № 10,,,,FALSE,Not processed
+Прожектор LED 200 W,,,,FALSE,Not processed
+Губка,,,,FALSE,Not processed
+Витамин В6-5% № 10,,,,FALSE,Not processed
+Шлифовочный диск 180 мм,,,,FALSE,Not processed
+Лоток перфорированный 100х80х2500,,,,FALSE,Not processed
+Гайка М16 (новый),,,,FALSE,Not processed
+"Wi-Fi роутер, Beeline",,,,FALSE,Not processed
+Обогреватель,,,,FALSE,Not processed
+Очки защитные темные,,,,FALSE,Not processed
+Масло моторное Лукойл Люкс 10/40,,,,FALSE,Not processed
+Подставка под РЛНД с приводом,,,,FALSE,Not processed
+Сальник 42х68х10,,,,FALSE,Not processed
+Мильгамма 2 мл №10,,,,FALSE,Not processed
+Синафлан мазь,,,,FALSE,Not processed
+Фильтр сепаратора 4010.0052,,,,FALSE,Not processed
+Хомут Х-1,,,,FALSE,Not processed
+"Мин.вода Тассай 0,5 л",,,,FALSE,Not processed
+Кондиционер настенный Almacom 18 QS,,,,FALSE,Not processed
+Мультиметр цифровой ANTNG A3005,,,,FALSE,Not processed
+Фильтр воздушный 400504-00159 на ДЭС-825 АКСА,,,,FALSE,Not processed
+Подшипник 2217-3104800 заднего колеса (сальник65х90х10),,,,FALSE,Not processed
+Щетка металлическая с деревянной ручкой,,,,FALSE,Not processed
+"Верхняя щека для трубного ключа 24""",,,,FALSE,Not processed
+"Барабан VersaLink C7020/25/30 (черный - 109000к, цветные - 87000к)",,,,FALSE,Not processed
+Фонарь ручной,,,,FALSE,Not processed
+Анаферон взрослый,,,,FALSE,Not processed
+Термокабель 15KXTV2-CT-T3,,,,FALSE,Not processed
+Сальниковая набивка 8 мм,,,,FALSE,Not processed
+"Шуруп 3,5*25",,,,FALSE,Not processed
+"Фильтр масляный 996-452 (10000-59645, CH10929)",,,,FALSE,Not processed
+НАЙЗ 1% ГЕЛЬ 20 г,,,,FALSE,Not processed
+Набор медных шайб,,,,FALSE,Not processed
+"Кетатоп 100мг 2,0 №10",,,,FALSE,Not processed
+Хомуты 25-40 мм,,,,FALSE,Not processed
+"ВНКТ 73-5,5 и муфты к ним",,,,FALSE,Not processed
+Амортизатор задний,,,,FALSE,Not processed
+Газосепаратор-диспергатор ГСДАШО5-200Э/КП,,,,FALSE,Not processed
+Задвижка клиновая Dn-50мм Pn-16bar,,,,FALSE,Not processed
+Трубный ключ большой,,,,FALSE,Not processed
+Блок управление двиг. в сборе,,,,FALSE,Not processed
+"Бак для приготовления гипохлорида -60л,",,,,FALSE,Not processed
+Наконечник 16,,,,FALSE,Not processed
+Пульт - приемник S2400ND,,,,FALSE,Not processed
+Головка сальниковая для лубрикатора,,,,FALSE,Not processed
+Помпа водяной,,,,FALSE,Not processed
+"Манометр 0-10 кгс/см2 (М 20*1,5)",,,,FALSE,Not processed
+канат страховочный 16мм,,,,FALSE,Not processed
+Родиатор кондицианера,,,,FALSE,Not processed
+Лопата совковая,,,,FALSE,Not processed
+Матрас,,,,FALSE,Not processed
+Ножницы по металлу SPARLUX,,,,FALSE,Not processed
+"Американка д.20мм, пластик",,,,FALSE,Not processed
+Видеорегистратор Neoline Wide S22,,,,FALSE,Not processed
+Дисковая пила,,,,FALSE,Not processed
+Насос дозировочный УДХ,,,,FALSE,Not processed
+Блок индикации и регистрации параметров СПО СПС-7Т,,,,FALSE,Not processed
+Ваза для цветов,,,,FALSE,Not processed
+"Вентиль шаровый д.15мм , бронза",,,,FALSE,Not processed
+Грипго № 4,,,,FALSE,Not processed
+"Шкаф коммуникационный, SHIP, 601S.6624.03.100, 103 серия, 19'' 24U, 600*600*1200 мм, Ш*Г*В, Передняя дверь закалённое стекло, Задняя дверь глухая",,,,FALSE,Not processed
+Предохранитель 15А для радистанции Motorola CM 140,,,,FALSE,Not processed
+"Термодатчик МЕТРАН-2000 E07 Исполнение У1.1 Диапазон -50...+120 L28, HCX Pt100/B/4 для узла подвода УПН-5-16-1800 горизонтального насоса",,,,FALSE,Not processed
+"Насос погружной падача сточных вод на фильтрацию PEDROILOV,",,,,FALSE,Not processed
+Меновазин 40,,,,FALSE,Not processed
+Порошок (мешок - 15 кг.),,,,FALSE,Not processed
+Набор головок,,,,FALSE,Not processed
+Удобрение для цветов,,,,FALSE,Not processed
+Деэмульгатор,,,,FALSE,Not processed
+Фильтр масляный,,,,FALSE,Not processed
+Банат с ведром,,,,FALSE,Not processed
+"Тройник д.25мм, пластик",,,,FALSE,Not processed
+Насос ( К-45/30 Уз1),,,,FALSE,Not processed
+"Сетевой UTP - кабель, CAT.5E",,,,FALSE,Not processed
+Превентор плашечный ручной ППР 60х21,,,,FALSE,Not processed
+Краска желтая по металлу,,,,FALSE,Not processed
+Торцевой фрез 146мм,,,,FALSE,Not processed
+"Муфта д.40мм, пластик",,,,FALSE,Not processed
+Ролик ремня генератора Toyota Hilux,,,,FALSE,Not processed
+Калодка тормозной,,,,FALSE,Not processed
+Мыло жидкое,,,,FALSE,Not processed
+Сифон гофрированный,,,,FALSE,Not processed
+ОЗУ 16 Гбайт DDR4,,,,FALSE,Not processed
+"Вентиль шаровый д.20мм ,бронза",,,,FALSE,Not processed
+Реактивная тяга на сайлентблоках ВАЗ,,,,FALSE,Not processed
+Набор инструментов 94 предмет,,,,FALSE,Not processed
+Бинокль 15*50,,,,FALSE,Not processed
+Марля не/ст 1*90,,,,FALSE,Not processed
+"Кабель КГ2х2,5",,,,FALSE,Not processed
+Туалетное мыло.(жидкое мыло 5-л.),,,,FALSE,Not processed
+Болт М 6,,,,FALSE,Not processed
+AEL пакетный выключатель,,,,FALSE,Not processed
+Диклофенак 75мг,,,,FALSE,Not processed
+Ручка красная,,,,FALSE,Not processed
+Комет,,,,FALSE,Not processed
+Очиститель карбюратора,,,,FALSE,Not processed
+Режущий ролик RIDGIT F367S,,,,FALSE,Not processed
+"Плита дорожная 6 х 1,5",,,,FALSE,Not processed
+"Набор диэл, инструмента ЗУБР ""ЭЛЕКТРИК"" пассатижи бокорезы клещпереставные кабелерез, разводной кл",,,,FALSE,Not processed
+Фланец стальной 100/25,,,,FALSE,Not processed
+Удлинитель УК5О Катушка 4места/50м,,,,FALSE,Not processed
+Электро-контактный термометр ТГП-100Эк 0-100°С L=5м,,,,FALSE,Not processed
+Кабель USB на манометров PPS-25,,,,FALSE,Not processed
+Масло В.О. ТАД-17 10 л,,,,FALSE,Not processed
+"Ремень 8,5*8*850",,,,FALSE,Not processed
+Фонарь налобный 18650,,,,FALSE,Not processed
+Линкас мазь,,,,FALSE,Not processed
+Задвижка клиновая Dn-89мм Pn-16bar,,,,FALSE,Not processed
+Рем комплект двигателя прокладок 4216,,,,FALSE,Not processed
+Стекло лобовое,,,,FALSE,Not processed
+"Диклофенак 140мг № 5, пластырь",,,,FALSE,Not processed
+Компрессор кондиционера,,,,FALSE,Not processed
+Комбинезон одноразовый,,,,FALSE,Not processed
+Домкрат 3тн,,,,FALSE,Not processed
+Точка доступа Ubiquiti Rocket M5 AC Lite,,,,FALSE,Not processed
+"Мукалтин 0,05",,,,FALSE,Not processed
+"Тройник д.15мм,пластик",,,,FALSE,Not processed
+Тонер Xerox (голубой) VersaLink C7120,,,,FALSE,Not processed
+Лоток перфорированный 100х50х2500,,,,FALSE,Not processed
+Аккумулятор газоанализатора 12V 12AR,,,,FALSE,Not processed
+Монтажный нож электрика,,,,FALSE,Not processed
+Обратный клапан ТНВД,,,,FALSE,Not processed
+Костюм влагозащитный,,,,FALSE,Not processed
+"Колено 90º (муфта, угольник проходной)",,,,FALSE,Not processed
+Системный блок Core i5-12400-2.5GHz/H610/RAM 16GB/SSD 1TB (M.2)/no DVD/400W,,,,FALSE,Not processed
+"Кран шаровой д.32мм, пластик",,,,FALSE,Not processed
+"Ингибитор солеотложений ""Ранскейл-4107""",,,,FALSE,Not processed
+Файл в наборе А4,,,,FALSE,Not processed
+Замок двери правый 315177-6105100-00 Уаз Хантер,,,,FALSE,Not processed
+Рулевой механизм УАЗ,,,,FALSE,Not processed
+Генератор 27060-ОС110,,,,FALSE,Not processed
+"АЛМАГЕЛЬ 170,0",,,,FALSE,Not processed
+Малярный валик.,,,,FALSE,Not processed
+Набор ключей от 8 до 30(хромованадиевые),,,,FALSE,Not processed
+Краска серая (расход-200 гр/м.кв.),,,,FALSE,Not processed
+"Кран шаровой д.40мм, пластик",,,,FALSE,Not processed
+Колодка тормозная передняя Газель (комплект),,,,FALSE,Not processed
+"Автоматический выключатель 3 –х фазный 40А,",,,,FALSE,Not processed
+Мышь беспроводная,,,,FALSE,Not processed
+Литол-24/О/смазка/15кг/шт,,,,FALSE,Not processed
+Шаровая опора 43310-09015 (нижний),,,,FALSE,Not processed
+Фонарь налобный,,,,FALSE,Not processed
+Ремень 1320,,,,FALSE,Not processed
+Шланги системы охлаждения на ДЭС ВИЛСОН,,,,FALSE,Not processed
+Клей Akfix-705 400 ml+100gr,,,,FALSE,Not processed
+Набор электрика,,,,FALSE,Not processed
+Держак,,,,FALSE,Not processed
+Отрезной диск 230 мм,,,,FALSE,Not processed
+Авиационное масло,,,,FALSE,Not processed
+Переносной светодиодный прожектор,,,,FALSE,Not processed
+Колодки тормозные (FR) Hilux передние,,,,FALSE,Not processed
+"Верхняя щека для трубного ключа 36""",,,,FALSE,Not processed
+Маркер перманентные в наборе,,,,FALSE,Not processed
+Лист ПВЛ 5(506) 1200х3000,,,,FALSE,Not processed
+Швеллер10 У 12м,,,,FALSE,Not processed
+Переключатель массы,,,,FALSE,Not processed
+Масляный фильтр Д-245 ФМ 009-1012005 (Т227),,,,FALSE,Not processed
+Амортизатор передний УАЗ-3163,,,,FALSE,Not processed
+"Манометр 0-25 кгс/см2 (М 20*1,5)",,,,FALSE,Not processed
+Псило бальзам 20г,,,,FALSE,Not processed
+"Электрод LB -3,2",,,,FALSE,Not processed
+"Аква - Алкалин, щелочный реагент.",,,,FALSE,Not processed
+Коммутатор Ubiquiti UniFi Switch Pro 48 PoE Gen2,,,,FALSE,Not processed
+Болт М16,,,,FALSE,Not processed
+Масло моторное Лукойл Авангард 10W-40 205л,,,,FALSE,Not processed
+"Левомицетин 0,5% 10 мл капли глаз",,,,FALSE,Not processed
+Литиевая батарея от PPS-25,,,,FALSE,Not processed
+"SSD - накопитель, 1 Tb, 2.5'",,,,FALSE,Not processed
+"Патч Панель, SHIP, P197-24C, Цветная, Категория 5e, 19"" (1U), 24 Порта",,,,FALSE,Not processed
+Рулевой тяга (наконечники) 45046-09281,,,,FALSE,Not processed
+Бензин АИ-92 л,,,,FALSE,Not processed
+Набор вольцовка,,,,FALSE,Not processed
+Патрубка радиатора на ВИЛСОН,,,,FALSE,Not processed
+Спиртовые салфетки,,,,FALSE,Not processed
+Преобразователь полированного штока 3071 Эхолот Ecometer,,,,FALSE,Not processed
+Бур 8*160 мм,,,,FALSE,Not processed
+ДЮФАЛАК 200 МЛ Р-Р,,,,FALSE,Not processed
+Прожектор LED 100 W,,,,FALSE,Not processed
+Бумага А 4,,,,FALSE,Not processed
+Топливный фильтор,,,,FALSE,Not processed
+Сверло по металлу набор,,,,FALSE,Not processed
+Полотенце,,,,FALSE,Not processed
+Сальник задный на ДЭС-825 АКСА (турецкий),,,,FALSE,Not processed
+"Журнал регистрации ""Исходящей корреспонденции""",,,,FALSE,Not processed
+Чехлы для Автомобильных сидений,,,,FALSE,Not processed
+Топливный фильтр 186100-6360,,,,FALSE,Not processed
+Паронит 5 мм,,,,FALSE,Not processed
+Воздушный фильтр TOYOTA 17801-61030,,,,FALSE,Not processed
+Коврик термоизооляционный,,,,FALSE,Not processed
+Сайлентблок продольной тяги,,,,FALSE,Not processed
+Муфта концевая 10 КВТп-3х(150-250),,,,FALSE,Not processed
+"Гидроциклон для очистки воды от мех.примесей печей ПП-0,63 на ГУ-1",,,,FALSE,Not processed
+Комплект ГРМ,,,,FALSE,Not processed
+Кран шаровой стальной привар. Ду 100/25,,,,FALSE,Not processed
+Фильтр газовый Термобрест ВН6-6М,,,,FALSE,Not processed
+"Набор метчиков и плашек 000110М18 ,1,5мм,110шт комп",,,,FALSE,Not processed
+Душевая кабина,,,,FALSE,Not processed
+Тормозной колодка на барабан УПА-60/80.размер 20*12см,,,,FALSE,Not processed
+Отвод 114*5,,,,FALSE,Not processed
+"Вакумный насос КО503Б,02,14,100-Q=4М3/мин=1450об/мин",,,,FALSE,Not processed
+датчик давления масло на ДЭС-825 АКСА,,,,FALSE,Not processed
+Только секции насоса 0215ЭЦНАКИ5-25И-1550Э/КП,,,,FALSE,Not processed
+Календарь настольный,,,,FALSE,Not processed
+Кабель HDMI,,,,FALSE,Not processed
+Силикон-сапфировый автономный манометр PPS25,,,,FALSE,Not processed
+Амбробене 30мг № 20,,,,FALSE,Not processed
+"Термометр WIKA 0 - 100 ºC, L = 50 mm ТМ 55.01",,,,FALSE,Not processed
+Форсунка ЯМЗ,,,,FALSE,Not processed
