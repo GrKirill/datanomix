@@ -99,10 +99,10 @@ class ProductMatcher:
 # Пример использования
 if __name__ == "__main__":
     # Инициализация модели
-    matcher = ProductMatcher("enstru.csv")
+    matcher = ProductMatcher("./data/enstru.csv")
     
     # Тестовый запрос
-    test_queries = pd.read_csv('test_data.csv')[15:]['Задание:']
+    test_queries = pd.read_csv('./data/test_data.csv')[15:]['Задание:']
     prediction_1 = []
     prediction_3 = []
     for query in test_queries:
