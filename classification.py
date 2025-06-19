@@ -6,6 +6,14 @@ import re
 import string
 import torch
 
+def format_items(items):
+    formatted_list = []
+    for item in items:
+        code = item['Код']
+        name = item['Наименование с характеристикой']
+        formatted_list.append(f"{code}: {name}; \n")
+    return formatted_list
+
 class ProductMatcher:
     def __init__(self, file_path, model_name='sentence-transformers/paraphrase-multilingual-mpnet-base-v2'):
         """
@@ -110,7 +118,7 @@ if __name__ == "__main__":
         similar_products = matcher.find_similar_codes(query)
         try:
             prediction_1.append(similar_products[0]['Код'])
-            prediction_3.append(similar_products)
+            prediction_3.append(''.join(format_items(similar_products)))
         except:
             prediction_1.append('-')
             prediction_3.append('-')
